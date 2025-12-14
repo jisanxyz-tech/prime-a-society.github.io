@@ -1,249 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>Prime A Society</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-/* ------------------ GLOBAL ------------------ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    color: #ffffff;
-    overflow-x: hidden;
-}
-
-/* ------------------ ANIMATION ------------------ */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ------------------ HEADER ------------------ */
-header {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-header img {
-    width: 140px;
-    animation: float 3s ease-in-out infinite;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-top: 20px;
-    color: #ffd369;
-}
-
-header p {
-    max-width: 700px;
-    margin: 15px auto;
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-/* ------------------ BUTTONS ------------------ */
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    margin: 10px;
-    border-radius: 30px;
-    background: linear-gradient(45deg, #ffd369, #ff9f1c);
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.08);
-}
-
-/* ------------------ SECTIONS ------------------ */
-section {
-    padding: 70px 10%;
-    animation: fadeUp 1s ease forwards;
-}
-
-.section-title {
-    font-size: 2.3rem;
-    color: #ffd369;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* ------------------ CARDS ------------------ */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.card {
-    background: rgba(255,255,255,0.08);
-    padding: 25px;
-    border-radius: 18px;
-    transition: 0.4s;
-}
-
-.card:hover {
-    transform: translateY(-12px);
-    background: rgba(255,255,255,0.15);
-}
-
-.card h3 {
-    color: #ffd369;
-    margin-bottom: 10px;
-}
-
-/* ------------------ RESOURCES ------------------ */
-.resources a {
-    display: block;
-    margin: 10px 0;
-    color: #ffd369;
-    text-decoration: none;
-}
-
-.resources a:hover {
-    text-decoration: underline;
-}
-
-/* ------------------ FOOTER ------------------ */
-footer {
-    background: rgba(0,0,0,0.5);
-    padding: 40px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-footer p {
-    opacity: 0.8;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ------------------ HEADER ------------------ -->
-<header>
-    <img src="logo.jpg" alt="Prime A Society Logo">
-    <h1>Prime A Society</h1>
-    <p>
-        A community for deep thinkers — mathematics, science, programming,
-        Olympiad-level problem solving and truth beyond textbooks.
-    </p>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="fields.html">Fields</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 
-    <a href="DISCORD_LINK_HERE" class="btn">Join Our Discord</a>
-    <a href="FACEBOOK_LINK_HERE" class="btn">Facebook Page</a>
-</header>
+<div class="container">
+<img src="logo.jpg" width="130">
 
-<!-- ------------------ ABOUT ------------------ -->
-<section>
-    <h2 class="section-title">About Us</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">
-        Prime A Society is based in <b>Rajshahi, Bangladesh</b>.
-        We focus on mathematical beauty, scientific rigor,
-        competitive Olympiads, and programming skills.
-        Our goal is to build thinkers, not memorizers.
-    </p>
-</section>
+<h1>Prime A Society</h1>
+<p>
+A community for mathematics, science, and programming.
+We focus on Olympiad-level thinking and deep understanding.
+</p>
 
-<!-- ------------------ FIELDS ------------------ -->
-<section>
-    <h2 class="section-title">Our Fields</h2>
+<p>📍 Rajshahi, Bangladesh</p>
 
-    <div class="cards">
-        <div class="card">
-            <h3>Mathematics</h3>
-            <p>
-                Number theory, prime numbers, proofs,
-                Olympiad mathematics (IMO, BDMO, APMO).
-            </p>
-        </div>
+<a href="https://discord.gg/WsTgQQu49s" class="btn">Join Our Discord</a>
+    <a href="https://www.facebook.com/profile.php?id=61584760839964" class="btn">Join Our Facebook</a>
+</div>
 
-        <div class="card">
-            <h3>Science</h3>
-            <p>
-                Physics, astronomy, logical reasoning,
-                experimental and theoretical thinking.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Programming</h3>
-            <p>
-                C++, algorithms, problem solving,
-                competitive programming and projects.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- ------------------ RESOURCES ------------------ -->
-<section class="resources">
-    <h2 class="section-title">Olympiad Resources</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Bangladesh</h3>
-            <a href="https://bdomo.org">Bangladesh Math Olympiad</a>
-            <a href="https://bdpho.org">Bangladesh Physics Olympiad</a>
-            <a href="https://bdao.org">Bangladesh Astronomy Olympiad</a>
-        </div>
-
-        <div class="card">
-            <h3>International</h3>
-            <a href="https://www.imo-official.org">IMO</a>
-            <a href="https://ipho-unofficial.org">IPhO</a>
-            <a href="https://ioaa2015.in">IOAA</a>
-        </div>
-    </div>
-</section>
-
-<!-- ------------------ EVENTS ------------------ -->
-<section>
-    <h2 class="section-title">Events</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Weekly Problem Solving</h3>
-            <p>Online Discord sessions for Olympiad problems.</p>
-        </div>
-
-        <div class="card">
-            <h3>Workshops</h3>
-            <p>Math, science & programming workshops.</p>
-        </div>
-
-        <div class="card">
-            <h3>Competitions</h3>
-            <p>Internal contests and national Olympiad preparation.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ------------------ CONTACT ------------------ -->
 <footer>
-    <img src="logo.jpg" width="80"><br><br>
-    <p>📍 Rajshahi, Bangladesh</p>
-    <p>📧 Contact: YOUR_EMAIL_HERE</p>
-    <p style="margin-top:10px;">“Rabbi zidni ilma.”</p>
+<p>“ رَبِّ زِدْنِي عِلْمًا”</p>
 </footer>
 
 </body>
 </html>
+
